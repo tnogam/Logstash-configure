@@ -16,7 +16,7 @@ Steps to complete
 - sudo apt install elasticsearch -y
 
 - sudo nano /etc/elasticsearch/elasticsearch.yml
-	network.host: localhost
+	- network.host: localhost
 
 - sudo systemctl start elasticsearch
 
