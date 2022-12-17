@@ -46,7 +46,7 @@ Steps to complete
 # TESTING INGEST
 - Using local syslogs
 - sudo nano /etc/rsyslog.d/50-default.conf
-	- *.*                         	@@127.0.0.1:514
+	- *.* (4xTAB)@@127.0.0.1:514
 - sudo systemctl restart rsyslog.service
 
 
