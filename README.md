@@ -54,6 +54,7 @@ Steps to complete
 - curl -XGET "http://localhost:9200/syslog-received-on-tcp/_search?pretty" -H 'Content-Type: application/json' -d'{"size": 1}'
 
 
+
 # CLEAN UP
 - curl -XDELETE "http://localhost:9200/syslog-received-on-tcp/"
 - curl -XDELETE "http://localhost:9200/syslog-monitor/"
