@@ -5,26 +5,26 @@ Steps to complete
 
 - Any indents are for input into the config files that open
 
-sudo apt install curl -y
-sudo apt install git -y
-curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch |sudo gpg --dearmor -o /usr/share/keyrings/elastic.gpg
+- sudo apt install curl -y
+- sudo apt install git -y
+- curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch |sudo gpg --dearmor -o /usr/share/keyrings/elastic.gpg
 
-echo "deb [signed-by=/usr/share/keyrings/elastic.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
+- echo "deb [signed-by=/usr/share/keyrings/elastic.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
 
-sudo apt update -y
+- sudo apt update -y
 
-sudo apt install elasticsearch -y
+- sudo apt install elasticsearch -y
 
-sudo nano /etc/elasticsearch/elasticsearch.yml
+- sudo nano /etc/elasticsearch/elasticsearch.yml
 	network.host: localhost
 
-sudo systemctl start elasticsearch
+- sudo systemctl start elasticsearch
 
-sudo systemctl enable elasticsearch
+- sudo systemctl enable elasticsearch
 
-curl -X GET "localhost:9200"
+- curl -X GET "localhost:9200"
 
-sudo apt install kibana
+- sudo apt install kibana
 
 - sudo systemctl enable kibana
 
