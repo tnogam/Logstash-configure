@@ -33,20 +33,20 @@ Steps to complete
 - sudo apt install logstash
 
 - echo "kibanaadmin:`openssl passwd -apr1`" | sudo tee -a /etc/nginx/htpasswd.users
-enter password 
+	- enter password 
 
 
 - sudo git clone https://github.com/coralogix-resources/logstash-syslog.git /etc/logstash/conf.d/logstash-syslog
 
 - sudo nano /etc/logstash/conf.d/logstash-syslog/syslog-tcp-forward.conf
-	port =>514
+	- port =>514
 
 - sudo /usr/share/logstash/bin/logstash -f /etc/logstash/conf.d/logstash-syslog/syslog-tcp-forward.conf
 
 # TESTING INGEST
 - Using local syslogs
 - sudo nano /etc/rsyslog.d/50-default.conf
-	*.*                         	@@127.0.0.1:514
+	- *.*                         	@@127.0.0.1:514
 - sudo systemctl restart rsyslog.service
 
 
