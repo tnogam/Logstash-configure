@@ -3,7 +3,7 @@
 
 Steps to complete
 
-- Any indents are for input into the config files that open
+Any indents are for input into the config files that open
 
 - sudo apt install curl -y
 - sudo apt install git -y
